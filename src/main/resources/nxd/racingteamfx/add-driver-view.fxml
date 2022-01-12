@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="nxd.racingteamfx.AddDriverViewController"
+            prefHeight="600.0" prefWidth="800.0"
+            minWidth="800" minHeight="600">
+
+    <Text text="Driver Add" />
+    <Button fx:id="mainViewButton" onAction="#driverToMainScene" text="Back" />
+    <GridPane hgap="20" vgap="10" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20" AnchorPane.topAnchor="20" alignment="CENTER">
+        <Label text="Firstname:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="firstname" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <Label text="Lastname:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="lastname" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <Label text="Number:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="number" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Label text="Team:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <ChoiceBox fx:id="teamSelect" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <HBox GridPane.rowIndex="4" GridPane.columnIndex="1" alignment="BOTTOM_RIGHT">
+            <padding><Insets top="20" /></padding>
+            <Button onAction="#saveNewDriver" text="Save &amp; Close"  />
+        </HBox>
+
+    </GridPane>
+
+
+
+</AnchorPane>

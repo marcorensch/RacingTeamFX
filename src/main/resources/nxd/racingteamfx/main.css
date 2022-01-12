@@ -1,0 +1,23 @@
+.txtlight{
+    -fx-fill: #fff;
+}
+.appAnchorPane{
+    -fx-background-color: #171717;
+    -fx-text-fill: #fff;
+}
+.apptitleContainer{
+    -fx-background-color: #212121;
+}
+.apptitle{
+    -fx-font-family: "Avenir Next";
+    -fx-fill: #bdbdbd;
+    -fx-font-size: 20px;
+}
+
+.optionButton {
+    -fx-background-color: red;
+}
+
+.answerActive{
+    -fx-background-color: blue;
+}
